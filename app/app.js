@@ -6,9 +6,13 @@ angular.module('nlpMusic', [
   'firebase',
   'nlpMusic.home',
   'nlpMusic.login',
-  'nlpMusic.signup'
+  'nlpMusic.signup',
+  'nlpMusic.dashboard',
+  'nlpMusic.genre',
+  'nlpMusic.songs'
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+config(['$locationProvider', '$routeProvider',
+       function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/home'});

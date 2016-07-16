@@ -9,10 +9,21 @@ angular.module('nlpMusic.signup', ['ngRoute'])
   });
 }])
 
-.controller('SignupCtrl',
-['$scope', '$firebaseArray', ($scope, $firebaseArray) => {
-  var ref = new Firebase('https://nlpmusic-10e17.firebaseio.com/');
+.controller('SignupCtrl', ['$scope', function($scope) {
 
-  
-  console.log('ControllerLoaded')
+  $scope.signUp = function() {
+    firebase.auth().createUserWithEmailAndPassword($scope.email, $scope.password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorMessage);
+    });
+
+    // if (firebase.auth().currentUser) {
+    //   $locationProvider.path('/auth/dashboard');
+    // } else {
+    //   console.log('user not authenticated')
+    // }
+
+  }
 }]);

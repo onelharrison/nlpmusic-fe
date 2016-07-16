@@ -1,0 +1,48 @@
+<!-- Intro Header -->
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row pushed-row">
+        <div class="col-sm-12">
+          <h1>Upload A Song</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <div id="page-content-wrapper">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p>
+                        <form>
+                          <fieldset class="form-group">
+                            <label for="song-name">Song Name</label>
+                            <input class="form-control" id="song-name"></input>
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <label for="exampleTextarea">Song Lyrics</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                          </fieldset>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                          <!--
+                          <script type="text/javascript">
+                          function sendToServer() {
+                              var lyrics = document.getElementById("exampleTextarea").value;
+                              var sender = new XMLHttpRequest();
+                              sender.open("GET", "http://localhost:8000/" + lyrics);
+                              console.log("sent to server");
+                              sender.send();
+                          }
+​
+​
+                          </script> -->
+                        </form>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->

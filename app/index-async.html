@@ -30,12 +30,15 @@
     $script([
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
-      'bower_components/angularfire/dist/angularfire.min.js',
       'bower_components/firebase/firebase.js',
+      'bower_components/angularfire/dist/angularfire.min.js',
       'app.js',
       'home/home.js',
       'login/login.js',
-      'signup/signup.js'
+      'signup/signup.js',
+      'auth/dashboard/dashboard.js',
+      'auth/genre/genre.js',
+      'auth/songs/songs.js'
     ], function() {
       // when all is done, execute bootstrap angular application
       angular.bootstrap(document, ['nlpMusic']);
