@@ -4,8 +4,32 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /*.container{
+   background-image: url("../img/grey2.gif");
+ }*/
+
+
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.image{
+  width: 35%;
+  height: 25%;
+}
+
+.btn-primary{
+  background-color: LightSlateGrey;
+}
+
+h3{
+  text-align: center;
+}
+
+.thumbnail{
+  height: 300px;
+  width: 200px;
+  background-color: grey;
 }
 
 .hero-spacer {
@@ -15,6 +39,7 @@ body {
 .hero-feature {
     margin-bottom: 30px;
 }
+
 
 footer {
     margin: 50px 0;
